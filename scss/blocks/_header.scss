@@ -1,0 +1,58 @@
+.header {
+    &__container {
+        display: flex;
+        align-items: center;
+        min-height: 120px;
+    }
+
+    &__logo {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        color: #192252;
+        z-index: 50;
+    }
+
+    &__menu {
+        flex: 1 1 auto;
+    }
+
+    &__button {
+        z-index: 50;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    &__body {
+    }
+
+    &__list {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #192252;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            color: #0a1036;
+            border-bottom: 1px solid #0a1036;
+        }
+    }
+
+    &__icon {
+    }
+}

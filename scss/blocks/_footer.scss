@@ -1,0 +1,176 @@
+.footer {
+    padding: 120px 0px;
+    background-color: #0b265a;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__about {
+        flex: 1 1 49.75%;
+    }
+
+    &__logo {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin: 0px 0px 13px 0px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 28px;
+        color: #d9dbde;
+        max-width: 186px;
+        margin: 0px 0px 36px 0px;
+    }
+
+    &__soc {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__navigation {
+        flex: 1 1 51.25%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__rooms {
+    }
+
+    &__reservation {
+    }
+
+    &__contact {
+    }
+}
+.rooms-footer {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 19px;
+        color: #d9dbde;
+        &:hover {
+            color: #e7f0ff;
+            border-bottom: 1px solid #e7f0ff;
+        }
+        &_title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.01em;
+            color: #ffffff;
+            &:hover {
+                color: #e7f0ff;
+                border-bottom: 1px solid #e7f0ff;
+            }
+        }
+    }
+}
+.reservation-footer {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 19px;
+        color: #d9dbde;
+        &:hover {
+            color: #e7f0ff;
+            border-bottom: 1px solid #e7f0ff;
+        }
+        &_title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.01em;
+            color: #ffffff;
+            &:hover {
+                color: #e7f0ff;
+                border-bottom: 1px solid #e7f0ff;
+            }
+        }
+    }
+}
+.contact-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &__title {
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+    }
+
+    &__text {
+        cursor: pointer;
+        position: relative;
+        font-size: 16px;
+        line-height: 19px;
+        color: #d9dbde;
+        &._show > .contact-footer__hidetext {
+            visibility: visible;
+            animation: fadeIn 1s;
+        }
+        &:hover {
+            color: #e7f0ff;
+            border-bottom: 1px solid #e7f0ff;
+        }
+    }
+
+    &__hidetext {
+        visibility: hidden;
+        width: 200px;
+        background-color: #123981;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -100px;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

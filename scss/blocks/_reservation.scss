@@ -1,0 +1,86 @@
+.reservation {
+    padding: 80px 0px 80px 0px;
+    &__container {
+    }
+
+    &__body {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__title {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 150%;
+        /* identical to box height, or 54px */
+        letter-spacing: -0.01em;
+        color: #192252;
+
+        margin: 0px 0px 24px 0px;
+    }
+
+    &__text {
+        display: inline-block;
+        max-width: 588px;
+        margin: 0px 0px 32px 0px;
+    }
+
+    &__button {
+    }
+
+    &__items {
+        padding: 88px 0px 0px 0px;
+        display: flex;
+        gap: 24px;
+    }
+
+    &__item {
+        flex: 0 0 33.333%;
+    }
+}
+.item-reservation {
+    &__image {
+        border-radius: 4px;
+        margin: 0px 0px 32px 0px;
+    }
+
+    &__title {
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        /* identical to box height, or 36px */
+        color: #000000;
+        margin: 0px 0px 16px 0px;
+    }
+
+    &__text {
+        margin: 0px 0px 32px 0px;
+    }
+
+    &__button {
+        line-height: 150%;
+        /* identical to box height, or 27px */
+        color: #424f7b;
+        position: relative;
+        transition: all 0.5s ease 0s;
+        &::after {
+            content: url("/img/reservation/arrow_right.svg");
+            position: absolute;
+            white-space: pre;
+            display: inline;
+            top: 50%;
+            right: 0;
+            transform: translate(32px, -35%);
+            transition: all 0.5s ease 0s;
+        }
+        &:hover {
+            color: #192252;
+            &::after {
+                transform: translate(50px, -35%);
+            }
+        }
+    }
+}

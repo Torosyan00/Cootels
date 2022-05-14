@@ -1,0 +1,56 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@600;700&display=swap");
+/*Fonts*/
+body {
+    margin: 0;
+    height: 100%;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+
+    color: #848fac;
+}
+body._lock {
+    overflow: hidden;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+/*Container*/
+[class*="__container"] {
+    max-width: 1230px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+/*Container*/
+
+/*btn*/
+.button {
+    display: inline-block;
+    padding: 16px 32px;
+    background: #0e1734;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    transition: background-color 0.3s ease 0s;
+    &__header {
+        padding: 14px 16px;
+    }
+    &:hover {
+        background: #283970;
+    }
+}
+
+/*btn*/
